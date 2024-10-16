@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner{
+    
+     background-color: bisque;
+  }
+.body{
+
+    background: antiquewhite;
+
+}
+.container{
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+            gap: 16%;
+            margin: 5%;   
+            
+}
+
+
+.card {
+    box-sizing: border-box;
+    width: 380px;
+    height: 380px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    position: relative;
+    
+    
+
+  }
+  .card-img {
+    display: block; /* Resmin boşluk bırakmadan tam olarak kapsayıcıyı kaplamasını sağlar */
+    width: 100%; /* Resmin kartın genişliğine uyum sağlamasını sağlar */
+  }
+
+  .card-text {
+    position: absolute; /* Metni kesin konumlandırmak için */
+    top: 50%; /* Yükseklik olarak ortalamak için */
+    left: 50%; /* Genişlik olarak ortalamak için */
+    transform: translate(-50%, -50%); /* Gerçekten ortalamak için */
+    color: white; /* Metnin rengini beyaz yapmak genellikle okunabilirliği artırır */
+    text-align: center; /* Metni ortalamak için */
+    padding: 10px; /* Metnin etrafında biraz boşluk bırakmak için */
+    background: rgba(0, 0, 0, 0.5); /* Metnin arkasına yarı saydam bir arka plan eklemek için */
+  }
+  
+  .card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+
+
+
+

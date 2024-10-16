@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url(MENU.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; /* Tüm ekranı kaplayacak */
+  overflow: hidden;
+}
+
+/* Küçük ekranlar (mobil cihazlar) için ayar */
+@media (max-width: 844px) {
+  body {
+      background-size: cover; /* Mobilde de resmi ekranı tamamen kaplayacak şekilde ayarlar */
+  }
+}
